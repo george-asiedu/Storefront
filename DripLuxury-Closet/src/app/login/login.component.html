@@ -1,11 +1,11 @@
 <div class="w-full flex items-center justify-center flex-col h-screen">
-    <div class="w-3/4 bg-white h-auto rounded-lg shadow-2xl grid grid-cols-2">
+    <div class="w-3/4 bg-white h-auto rounded-xl shadow-2xl grid grid-cols-2">
         <div class="flex flex-col px-12 py-8 w-1/2">
-            <h1 class="text-xl font-medium text-blue">DripLuxury</h1>
+            <h1 class="text-xl font-medium text-sky-500 mb-10">DripLuxury</h1>
             <form 
                 
                 action="#" 
-                class="w-96 h-auto bg-yellow-200 border-none py-6 px-10 flex gap-4 flex-col"
+                class="w-96 h-auto border-none py-6 px-10 flex gap-4 flex-col"
             >
                 <h4 class="text-center text-2xl text-black font-medium">Login</h4>
                 <div class="flex flex-col gap-2">
@@ -14,7 +14,7 @@
                         type="email"
                         formControlName="email"
                         placeholder="login@email.com"
-                        class="border-b-2 border-blue cursor-pointer px-3 py-2 focus-within:outline-none"
+                        class="border-b-2 border-sky-300 cursor-pointer py-2 focus-within:outline-none"
                     >
                 </div>
                 <div class="flex flex-col gap-2">
@@ -23,20 +23,20 @@
                         type="password"
                         formControlName="email"
                         placeholder="**********"
-                        class="border-b-2 border-blue cursor-pointer px-3 py-2 focus-within:outline-none"
+                        class="border-b-2 border-sky-300 cursor-pointer py-2 focus-within:outline-none"
                     >
                 </div>
                 <button 
                     type="submit"
-                    class="w-full py-2 bg-blue cursor-pointer text-white font-medium rounded-md hover:bg-white hover:text-blue hover:border-2 hover:border-blue"
+                    class="w-full py-2 bg-sky-300 cursor-pointer text-white font-medium rounded-md hover:bg-white hover:text-sky-300 hover:border-2 hover:border-sky-300"
                 >
                     Login
                 </button>
                 <a routerLink="signup" class="text-center text-black font-medium">Create an Account</a>
             </form>
         </div>
-        <div class="img">
-            <!-- <img src="../../assets/login/img-1.jpg" alt=""> -->
+        <div class="w-full">
+            <img src="../../assets/login/login-img.jpg" class="rounded-r-xl" alt="">
         </div>
     </div>
 </div>
