@@ -3,26 +3,29 @@
         <div class="flex flex-col px-12 py-8 w-1/2">
             <h1 class="text-xl font-medium text-sky-500 mb-10">DripLuxury</h1>
             <form 
-                
+                [formGroup]="applyLogin"
+                (submit)="validateForm()"
                 action="#" 
                 class="w-96 h-auto border-none py-6 px-10 flex gap-4 flex-col"
             >
                 <h4 class="text-center text-2xl text-black font-medium">Login</h4>
                 <div class="flex flex-col gap-2">
-                    <label for="email" class="text-sm text-gray-600">Email</label>
+                    <label for="email" class="text-sm text-gray-600 font-medium">Email</label>
                     <input 
                         type="email"
                         formControlName="email"
                         placeholder="login@email.com"
+                        id="email"
                         class="border-b-2 border-sky-300 cursor-pointer py-2 focus-within:outline-none"
                     >
                 </div>
                 <div class="flex flex-col gap-2">
-                    <label for="password" class="text-sm text-gray-600">Password</label>
+                    <label for="password" class="text-sm text-gray-600 font-medium">Password</label>
                     <input 
                         type="password"
                         formControlName="email"
                         placeholder="**********"
+                        id="password"
                         class="border-b-2 border-sky-300 cursor-pointer py-2 focus-within:outline-none"
                     >
                 </div>

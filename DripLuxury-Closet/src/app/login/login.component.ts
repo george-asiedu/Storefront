@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';
+import { ReactiveFormsModule, FormGroup, FormControl, Validators, EmailValidator } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -10,5 +10,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  
+    applyLogin = new FormGroup({
+      email: new FormControl('', Validators.required),
+      password: new FormControl('', Validators.required)
+    })
 }
