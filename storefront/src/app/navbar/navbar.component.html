@@ -7,7 +7,7 @@
             Retail
         </button>
     </div>
-    <div class="flex items-center justify-between py-1 px-5 border border-secondary cursor-pointer w-2/5">
+    <div class="flex items-center justify-between py-1 px-5 border border-secondary cursor-pointer w-2/5 rounded-full">
         <input 
             type="text" 
             placeholder="Search"
@@ -18,16 +18,20 @@
     <div class="flex items-center w-1/3 gap-16">
         <img src="../../assets/cart.svg" alt="cart-icon" class="-ml-10">
         <div class="flex items-center justify-between w-full">
-            <button 
+            <a routerLink="login">
+                <button 
                 class="text-black bg-none cursor-pointer font-normal text-xl hover:text-secondary ml-5"
-            >
-            Login
-            </button>
-            <button 
+                >
+                Login
+                </button>
+            </a>
+            <a routerLink="signup">
+                <button 
                 class="text-white bg-primary cursor-pointer py-1 px-6 font-medium rounded-sm hover-btn"
                 >
                 Signup
-            </button>
+                </button>
+            </a>
         </div>
     </div>
 </header>
