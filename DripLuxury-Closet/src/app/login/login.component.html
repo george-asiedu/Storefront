@@ -3,10 +3,36 @@
         <div class="flex flex-col px-12 py-8 w-1/2">
             <h1 class="text-xl font-medium text-blue">DripLuxury</h1>
             <form 
+                
                 action="#" 
-                class="w-80 h-auto bg-yellow-200 shadow-2xl border-none p-6"
+                class="w-96 h-auto bg-yellow-200 border-none py-6 px-10 flex gap-4 flex-col"
             >
                 <h4 class="text-center text-2xl text-black font-medium">Login</h4>
+                <div class="flex flex-col gap-2">
+                    <label for="email" class="text-sm text-gray-600">Email</label>
+                    <input 
+                        type="email"
+                        formControlName="email"
+                        placeholder="login@email.com"
+                        class="border-b-2 border-blue cursor-pointer px-3 py-2 focus-within:outline-none"
+                    >
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="password" class="text-sm text-gray-600">Password</label>
+                    <input 
+                        type="password"
+                        formControlName="email"
+                        placeholder="**********"
+                        class="border-b-2 border-blue cursor-pointer px-3 py-2 focus-within:outline-none"
+                    >
+                </div>
+                <button 
+                    type="submit"
+                    class="w-full py-2 bg-blue cursor-pointer text-white font-medium rounded-md hover:bg-white hover:text-blue hover:border-2 hover:border-blue"
+                >
+                    Login
+                </button>
+                <a routerLink="signup" class="text-center text-black font-medium">Create an Account</a>
             </form>
         </div>
         <div class="img">
