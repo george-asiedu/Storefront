@@ -14,4 +14,9 @@ export class LoginComponent {
       email: new FormControl('', Validators.required),
       password: new FormControl('', Validators.required)
     })
+
+    validateForm() {
+      this.applyLogin.value.email ?? '',
+      this.applyLogin.value.password ?? ''
+    }
 }
