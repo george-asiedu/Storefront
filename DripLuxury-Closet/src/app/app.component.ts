@@ -4,11 +4,13 @@ import { RouterOutlet } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
+import { LoginComponent } from './login/login.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FontAwesomeModule],
+  imports: [CommonModule, RouterOutlet, FontAwesomeModule, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
