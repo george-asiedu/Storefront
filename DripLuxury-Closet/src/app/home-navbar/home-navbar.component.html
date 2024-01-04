@@ -1,1 +1,16 @@
-<p>home-navbar works!</p>
+<header
+    class="w-full overflow-hidden bg-white shadow-xl fixed top-0 z-10 px-12 py-5 flex items-center"
+>
+    <div class="flex items-center gap-4">
+        <h1 class="text-sky-300 font-bold text-3xl">DripLuxury</h1>
+        <div class="w-72 flex items-center gap-3 rounded-full border px-4 py-1 focus-within:border-sky-400">
+            <fa-icon [icon]="faSearch"></fa-icon>
+            <input 
+                type="text"
+                placeholder="Search"
+                class="border-none focus-within:outline-none w-full text-sm"
+            >
+        </div>
+    </div>
+
+</header>
