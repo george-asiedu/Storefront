@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
+impo
 
 @Component({
   selector: 'app-home-navbar',
@@ -11,4 +13,5 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeNavbarComponent {
   faSearch = faSearch
+  faBagshopping = faBagShopping
 }
