@@ -1,72 +1,79 @@
 <div class="w-full flex items-center justify-center flex-col h-screen">
-    <div class="w-3/4 bg-white h-auto rounded-xl shadow-2xl grid grid-cols-2">
-        <div class="flex flex-col px-12 py-8 w-1/2">
-            <h1 class="text-xl font-medium text-sky-500">DripLuxury</h1>
-            <form 
-                [formGroup]="applyLogin"
-                (submit)="validateForm()"
-                action="#" 
-                class="w-96 h-auto border-none pt-5 px-10 flex gap-4 flex-col"
-            >
-                <h4 class="text-center text-2xl text-black font-bold mb-3">Create an Account</h4>
-                <div class="flex flex-col">
-                    <label for="email" class="text-sm text-gray-600 font-medium">Name</label>
-                    <input 
-                        type="text"
-                        formControlName="name"
-                        placeholder="Anthony Taylor"
-                        id="email"
-                        class="border-b border-sky-300 cursor-pointer py-2 focus-within:outline-none"
-                    >
-                </div>
-                <div class="flex flex-col">
-                    <label for="email" class="text-sm text-gray-600 font-medium">Email</label>
-                    <input 
-                        type="email"
-                        formControlName="email"
-                        placeholder="signup@email.com"
-                        id="email"
-                        class="border-b border-sky-300 cursor-pointer py-2 focus-within:outline-none"
-                    >
-                </div>
-                <div class="flex flex-col">
-                    <label for="password" class="text-sm text-gray-600 font-medium">Password</label>
-                    <input 
-                        type="password"
-                        formControlName="email"
-                        placeholder="**********"
-                        id="password"
-                        class="border-b border-sky-300 cursor-pointer py-2 focus-within:outline-none"
-                    >
-                </div>
-                <button 
-                    type="submit"
-                    class="w-full py-2 bg-sky-300 cursor-pointer text-white font-medium rounded-md hover:bg-white hover:text-sky-300 hover:border-2 hover:border-sky-300"
-                >
-                    Signup
-                </button>
-                <p class="text-center text-black text-base">
-                    Already Have an Account? 
-                    <a 
-                        routerLink="/login"
-                        class="text-sky-500 font-bold hover:underline hover:text-sky-300 cursor-pointer"
-                    >
-                        Login
-                    </a>
-                </p>
-            </form>
+  <div class="w-3/4 bg-white h-auto rounded-xl shadow-2xl grid grid-cols-2">
+    <div class="flex flex-col px-12 py-8 w-1/2">
+      <h1 class="text-xl font-medium text-sky-500">DripLuxury</h1>
+      <form
+        [formGroup]="applyLogin"
+        (submit)="validateForm()"
+        action="#"
+        class="w-96 h-auto border-none pt-5 px-10 flex gap-4 flex-col"
+      >
+        <h4 class="text-center text-2xl text-black font-bold mb-3">
+          Create an Account
+        </h4>
+        <div class="flex flex-col">
+          <label for="email" class="text-sm text-gray-600 font-medium"
+            >Name</label
+          >
+          <input
+            type="text"
+            formControlName="name"
+            placeholder="Anthony Taylor"
+            id="email"
+            class="border-b border-sky-300 cursor-pointer py-2 focus-within:outline-none"
+          />
         </div>
-        <div class="max-w-full">
-            <app-carousel 
-                [images]="
-                [
-                    '../../assets/login/login-img.jpg', 
-                    '../../assets/login/login-2.jpg', 
-                    '../../assets/login/login-3.jpg', 
-                    '../../assets/login/login-4.jpg'
-                ]"
-            >
-            </app-carousel>
+        <div class="flex flex-col">
+          <label for="email" class="text-sm text-gray-600 font-medium"
+            >Email</label
+          >
+          <input
+            type="email"
+            formControlName="email"
+            placeholder="signup@email.com"
+            id="email"
+            class="border-b border-sky-300 cursor-pointer py-2 focus-within:outline-none"
+          />
         </div>
+        <div class="flex flex-col">
+          <label for="password" class="text-sm text-gray-600 font-medium"
+            >Password</label
+          >
+          <input
+            type="password"
+            formControlName="email"
+            placeholder="**********"
+            id="password"
+            class="border-b border-sky-300 cursor-pointer py-2 focus-within:outline-none"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full py-2 bg-sky-300 cursor-pointer text-white font-medium rounded-md hover:bg-white hover:text-sky-300 hover:border-2 hover:border-sky-300"
+        >
+          Signup
+        </button>
+        <p class="text-center text-black text-base">
+          Already Have an Account?
+          <a
+            routerLink="/login"
+            class="text-sky-500 font-bold hover:underline hover:text-sky-300 cursor-pointer"
+          >
+            Login
+          </a>
+        </p>
+      </form>
     </div>
+    <div class="max-w-full">
+      <app-carousel
+        [images]="[
+          '../../assets/login/login-img.jpg',
+          '../../assets/login/login-2.jpg',
+          '../../assets/login/login-3.jpg',
+          '../../assets/login/login-4.jpg'
+        ]"
+      >
+      </app-carousel>
+    </div>
+  </div>
 </div>
