@@ -38,8 +38,18 @@
                 <a routerLink="signup" class="text-center text-black font-medium hover:underline hover:text-sky-300">Create an Account</a>
             </form>
         </div>
-        <div class="w-full">
-            <img src="../../assets/login/login-2.jpg" class="rounded-r-xl" alt="">
+        <div class="max-w-full">
+            <app-carousel 
+                [images]="
+                [
+                    '../../assets/login/login-img.jpg', 
+                    '../../assets/login/login-2.jpg', 
+                    '../../assets/login/login-3.jpg', 
+                    '../../assets/login/login-4.jpg'
+                ]"
+            >
+            </app-carousel>
+            <!-- <img src="../../assets/login/login-img.jpg" class="rounded-r-xl" alt=""> -->
         </div>
     </div>
 </div>
