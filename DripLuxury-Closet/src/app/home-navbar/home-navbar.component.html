@@ -2,22 +2,22 @@
   class="w-full overflow-hidden bg-white shadow-xl fixed top-0 z-10 px-12 py-5 flex items-center justify-between"
 >
     <div class="flex items-center gap-6">
-        <a routerLink="" class="text-sky-300 font-bold text-3xl cursor-pointer">DripLuxury</a>
+        <a routerLink="" class="text-sky-900 font-bold text-3xl cursor-pointer">DripLuxury</a>
         <div
             class="w-72 flex items-center gap-3 rounded-full border px-4 py-1 focus-within:border-sky-400 shadow-md"
         >
-        <fa-icon [icon]="faSearch"></fa-icon>
+        <fa-icon [icon]="faSearch" class="text-sky-900"></fa-icon>
         <input
             type="text"
             placeholder="Search"
-            class="border-none focus-within:outline-none w-full text-sm"
+            class="text-sky-900 border-none focus-within:outline-none w-full text-sm placeholder:italic placeholder:text-sky-900"
         />
         </div>
     </div>
 
     <nav>
         <ul>
-            <li class="inline-block mx-2 text-black">
+            <li class="inline-block mx-2 text-sky-900">
                 <a
                     routerLink="/men"
                     class="text-center hover:text-sky-400 text-base after:content-[''] after:mx-auto 
@@ -26,7 +26,7 @@
                     Men
                 </a>
             </li>
-            <li class="inline-block mx-2 text-black">
+            <li class="inline-block mx-2 text-sky-900">
                 <a
                     routerLink="/women"
                     class="text-center hover:text-sky-400 text-base after:content-[''] after:mx-auto 
@@ -35,7 +35,7 @@
                     Women
                 </a>
             </li>
-            <li class="inline-block mx-2 text-black">
+            <li class="inline-block mx-2 text-sky-900">
                 <a
                     routerLink="/kids"
                     class="text-center hover:text-sky-400 text-base after:content-[''] after:mx-auto 
@@ -44,7 +44,7 @@
                     Kids
                 </a>
             </li>
-            <li class="inline-block mx-2 text-black">
+            <li class="inline-block mx-2 text-sky-900">
                 <a
                     routerLink="/accessories"
                     class="text-center hover:text-sky-400 text-base after:content-[''] after:mx-auto 
@@ -53,7 +53,7 @@
                     Accessories
                 </a>
             </li>
-            <li class="inline-block mx-2 text-black">
+            <li class="inline-block mx-2 text-sky-900">
                 <a
                     routerLink="/perfumes"
                     class="text-center hover:text-sky-400 text-base after:content-[''] after:mx-auto 
@@ -68,16 +68,16 @@
     <div class="flex items-center gap-4">
         <div class="flex items-center gap-2">
             <fa-icon [icon]="faSignin" class="text-xl text-sky-900"></fa-icon>
-            <a routerLink="/login" class="hover:text-sky-400">Login</a>
+            <a routerLink="/login" class="hover:text-sky-400 text-sky-900">Login</a>
         </div>
         <div class="flex items-center gap-2">
             <fa-icon [icon]="faUserPlus" class="text-xl text-sky-900"></fa-icon>
-            <a routerLink="/signup" class="hover:text-sky-400">Signup</a>
+            <a routerLink="/signup" class="hover:text-sky-400 text-sky-900">Signup</a>
         </div>
     </div>
 
     <div class="flex items-center gap-2">
         <fa-icon [icon]="faBagshopping" class="text-xl text-sky-900"></fa-icon>
-        <a routerLink="/bag" class="hover:text-sky-400">Bag</a>
+        <a routerLink="/bag" class="hover:text-sky-400 text-sky-900">Bag</a>
     </div>
 </header>
