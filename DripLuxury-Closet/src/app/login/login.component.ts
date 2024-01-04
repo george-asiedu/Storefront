@@ -8,7 +8,6 @@ import { CarouselComponent } from '../carousel/carousel.component';
   standalone: true,
   imports: [ReactiveFormsModule, RouterLink, CarouselComponent],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
 })
 export class LoginComponent {
     applyLogin = new FormGroup({

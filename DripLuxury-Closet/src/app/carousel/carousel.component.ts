@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.css'
 })
 export class CarouselComponent implements OnInit {
   @Input() images: string[] = [];
