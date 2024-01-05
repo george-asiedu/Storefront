@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { HomeNavbarComponent } from './home-navbar/home-navbar.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 export const routes: Routes = [
     {
@@ -16,7 +16,7 @@ export const routes: Routes = [
     },
     {
         path: '',
-        component: HomeNavbarComponent,
-        title: 'DripLuxury - Home'
+        component: HomePageComponent,
+        title: 'DripLuxury - Home - Page'
     }
 ];
