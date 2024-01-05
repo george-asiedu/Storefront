@@ -10,7 +10,11 @@ module.exports = {
         black: "#222222"
       },
       height: {
-        height: '2px'
+        height: '2px',
+        salesHeight: '70vh'
+      },
+      margin: {
+        marginTop: '76px'
       }
     },
   },
