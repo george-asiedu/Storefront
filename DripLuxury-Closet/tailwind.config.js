@@ -11,10 +11,13 @@ module.exports = {
       },
       height: {
         height: '2px',
-        salesHeight: '70vh'
+        salesHeight: '75vh'
       },
       margin: {
-        marginTop: '76px'
+        marginTop: '77px'
+      },
+      fontFamily: {
+        sans: ['Lobster', 'sans-serif']
       }
     },
   },
