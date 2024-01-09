@@ -1,4 +1,4 @@
-<div class="w-full h-auto grid grid-cols-6 items-center gap-6">
+<!-- <div class="w-full h-auto grid grid-cols-6 items-center gap-6">
     <div class="cards shadow-md hover:shadow-2xl">
         <div class="img img-1"></div>
         <div class="bg-white py-3 px-6">
@@ -41,4 +41,42 @@
             <p class="text-orange-600">$30.64</p>
         </div>
     </div>
+</div> -->
+
+<div class="cards-container">
+  <div class="w-full h-auto grid grid-cols-6 items-center gap-6" *ngIf="cards">
+    <div
+      class="cards shadow-md hover:shadow-2xl"
+      *ngFor="
+        let card of cards
+          | slice
+            : (currentPage - 1) * itemsPerPage
+            : currentPage * itemsPerPage
+      "
+    >
+      <div class="img" [ngClass]="'img-' + card.imgClass"></div>
+      <div class="bg-white py-3 px-6">
+        <h4 class="text-sky-900 font-medium">{{ card.title }}</h4>
+        <p class="text-orange-600">{{ card.price }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <button
+      (click)="changePage(currentPage - 1)"
+      class="prev-page"
+      *ngIf="currentPage > 1"
+    >
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <span>{{ currentPage }} / {{ totalPages }}</span>
+    <button
+      (click)="changePage(currentPage + 1)"
+      class="next-page"
+      *ngIf="currentPage < totalPages"
+    >
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
 </div>
