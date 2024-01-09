@@ -11,7 +11,7 @@ module.exports = {
       },
       height: {
         height: '2px',
-        salesHeight: '87vh'
+        salesHeight: '86vh'
       },
       margin: {
         marginTop: '77px'
